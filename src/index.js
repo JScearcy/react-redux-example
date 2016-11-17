@@ -5,14 +5,14 @@ import './index.css';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
-import { accomplishmentReducer, initialAccomplishmentState } from './reducers';
+import { textReducer, initialTextState } from './reducers';
 
 let reducer = combineReducers({
-  accomplishments: accomplishmentReducer
+  text: textReducer
 });
 
 let initialState = {
-  accomplishments: initialAccomplishmentState
+  text: initialTextState
 }
 
 let store = createStore(reducer, initialState, applyMiddleware(thunk));

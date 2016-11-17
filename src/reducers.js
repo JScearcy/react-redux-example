@@ -1,6 +1,6 @@
-export const initialAccomplishmentState = ['initial state'];
+export const initialTextState = ['initial state'];
 
-export function accomplishmentReducer(state = initialAccomplishmentState, action) {
+export function textReducer(state = initialTextState, action) {
   switch (action.type) {
     case 'UPDATE_ITEM':
       return [action.data]

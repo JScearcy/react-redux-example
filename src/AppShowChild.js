@@ -5,7 +5,7 @@ class AppShowChild extends Component {
     render() {
         return (
             <div>
-                <p>{this.props.accomplishments}</p>
+                <p>{this.props.text}</p>
             </div>
         )
     }
@@ -13,7 +13,7 @@ class AppShowChild extends Component {
 
 function mapStateToProps(state) {
     return {
-        accomplishments: state.accomplishments
+        text: state.text
     }
 }
 

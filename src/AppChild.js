@@ -9,7 +9,7 @@ class AppChild extends Component {
         let randChange = 'Changed: ' + Math.floor(Math.random() * 1000);
         return (
             <div>
-                <p>{this.props.accomplishments}</p>
+                <p>{this.props.text}</p>
                 <button onClick={this.props.updateItem.bind(null, randChange)}>Change</button>
             </div>
         )
@@ -18,7 +18,7 @@ class AppChild extends Component {
 
 function mapStateToProps(state) {
     return {
-        accomplishments: state.accomplishments
+        text: state.text
     }
 }
 
